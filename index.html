@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Resume</title>
+  <meta name="author" content="">
+  <link rel="canonical" href="" />
+  <link rel="home" href="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon_logo.png" >
+  <link rel="apple-touch-icon" type="image/jpg" href="images/icon.jpg">
+
+  <!-- ================================
+    Start CSS
+    ================================= -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7.0.5/swiper-bundle.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- ================================
+    End CSS
+    ================================= -->
+
+</head>
+
+<body>
+
+  <!-- ================================
+    Start Navigation Bar
+    ================================= -->
+  <header>
+    <div class="headerCol">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <div class="logoCol" style="width: 200px;"><a href="index.html"><img src="images/resume_logo.png" alt="..."></a></div>
+          </div>
+          <div class="col">
+            <div class="d-md-none">
+              <button class="navToggle">
+                <span class="navToggle__text">Toggle Menu</span>
+              </button>
+            </div>
+            <div class="navCollapseCol">
+              <div class="navCol">
+                <ul>
+                  <li><a class="active" href="#">Home</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ================================
+    End Navigation Bar
+    ================================= -->
+
+  <!-- ================================
+    Start Content
+    ================================= -->
+  <section>
+    <div class="bannerSection">
+      <div class="container">
+        <div class="row g-4 g-md-3  align-items-center">
+          <div class="col-md-auto order-md-last">
+            <div class="bannerUserImg">
+              <img src="images/user-img.jpg" alt="...">
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="bannerContent">
+              <h1 class="xlTitle pb-3">
+                Hi, I’m Oleg, <br>
+                a <span class="multiple-text"></span> <br> back-end Developer
+              </h1>
+            </div>
+            <!-- <div class="bannerContent">
+                <h1 class="xlTitle pb-3">Hi, I’m Oleg, <br> a <span class="text sec-text">Python</span> <br> back-end Developer</h1>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              </div> -->
+
+            <!-- <script>
+                  const text = document.querySelector(".sec-text");
+          
+                  const textLoad = () => {
+                      setTimeout(() => {
+                          text.textContent = "Python";
+                      }, 0);
+                      setTimeout(() => {
+                          text.textContent = "Golang";
+                      }, 4000);
+                      // setTimeout(() => {
+                      //     text.textContent = "YouTuber";
+                      // }, 8000);
+                  }
+          
+                  textLoad()
+                  setInterval(textLoad, 8000);
+              </script> -->
+
+              
+            <div class="bannerBtnCol">
+              <div class="row">
+                <div class="col-auto">
+                  <a download href="javascript:void(0)" class="btn btnPrimary" title="not yet written &#128169;">Download CV</a>
+                </div>
+                <!--Show contacts ================================
+                 ============================================== -->
+                <div class="col-auto">
+                  <button type="button" class="btn btnOutline" id="liveToastBtn">Contacts</button>
+
+                  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="images/contact.png" class="rounded me-2" alt="...">
+                        <strong class="me-auto">Get in touch with me</strong>
+                        <small>Now</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+                      </div>
+                      <div class="toast-body">
+                        <p>
+                          <img src="images/gmail.svg" alt="" style="width: 27px;">
+                          <span class="show-contact">job.rem1zoff@gmail.com</span>
+                        </p>
+                        <p>
+                          <img src="images/telegram.svg" alt=""><span class="show-contact">https://t.me/@rem1zoff_oleg</span>
+                        </p>
+                        <p>
+                          <img src="images/git-logo.png" style="width: 33px;" alt=""><span class="show-contact">https://github.com/OlegRemizoff</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <script>
+                    var now = new Date();
+                    const toastTrigger = document.getElementById('liveToastBtn')
+                    const toastLiveExample = document.getElementById('liveToast')
+                    if (toastTrigger) {
+                      toastTrigger.addEventListener('click', () => {
+                        const toast = new bootstrap.Toast(toastLiveExample)
+
+                        toast.show()
+                      })
+                    }
+                  </script>
+                  
+                </div>
+                <!--End contacts ================================
+                ============================================== -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sectionSpace pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-auto">
+            <div class="keySkillCol">
+              <h4 class="smTitle pb-3">Key Skills</h4>
+              <div class="keySkillCard">
+                <div class="ksIconCol">
+                  <img src="images/linux-logo.png" alt="...">
+                </div>
+                <span class="ksText">Linux</span>
+              </div>
+              <div class="keySkillCard">
+                <div class="ksIconCol">
+                  <a href="https://github.com/OlegRemizoff"><img src="images/git-logo.png" alt="..." title="Go to GitHub"></a>
+                </div>
+                <span class="ksText">Git</span>
+              </div>
+              <div class="keySkillCard">
+                <div class="ksIconCol">
+                  <img src="images/docker-logo.png" alt="...">
+                </div>
+                <span class="ksText">Docker</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <h4 class="smTitle pb-3">Coding Skills</h4>
+            <div class="progressCol">
+              <div class="progressCard">
+                <div class="progressCol">
+                  <img src="images/python-logo.png" alt="...">
+                  <span class="progressLbl">Python</span>
+                  <div class="row g-2 align-items-center">
+                    <div class="col">
+                      <div class="progress progressStyle">
+                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="95"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <span class="pLbl">60%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="progressCol">
+                  <img src="images/go-logo.png" alt="...">
+                  <span class="progressLbl"> Go</span>
+                  <div class="row g-2 align-items-center">
+                    <div class="col">
+                      <div class="progress progressStyle">
+                        <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="85"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <span class="pLbl">35%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="progressCol">
+                  <img src="images/django-logo.png" alt="...">
+                  <span class="progressLbl">Django</span>
+                  <div class="row g-2 align-items-center">
+                    <div class="col">
+                      <div class="progress progressStyle">
+                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <span class="pLbl">40%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="progressCol">
+                  <img src="images/icon.svg" alt="...">
+                  <span class="progressLbl">Flask</span>
+                  <div class="row g-2 align-items-center">
+                    <div class="col">
+                      <div class="progress progressStyle">
+                        <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="65"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <span class="pLbl">30%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="progressCol">
+                  <img src="images/sql-logo.png" alt="...">
+                  <span class="progressLbl">SQL (Postgres)</span>
+                  <div class="row g-2 align-items-center">
+                    <div class="col">
+                      <div class="progress progressStyle">
+                        <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="65"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <span class="pLbl">30%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="sectionSpace">
+      <div class="container">
+        <div class="portfolioCol">
+          <div class="row pb-3">
+            <div class="col">
+              <h4 class="smText regular">Featured Work</h4>
+            </div>
+            <div class="col-auto">
+              <!-- <a href="javascript:void(0)" class="simpleLink">View all</a> -->
+            </div>
+          </div>
+          <div class="portfolioCard">
+            <div class="row g-4 align-items-center">
+              <div class="col-md-auto">
+                <div class="portfolioImgCol">
+                  <a href="images/eccomerse_preview_01.png" data-fancybox="gallery" data-caption="Caption #1">
+                    <img src="images/eccomerse_preview_01.png" />
+                  </a>
+                  <span>...</span>
+                  <a href="images/eccomerse_preview_02.png" data-fancybox="gallery" data-caption="Caption #2">
+                    <img src="images/eccomerse_preview_02.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="portfolioContentCol">
+                  <h4 class="lgTitle"><a href="javascript:void(0)">Portfolio option 1</a></h4>
+                  <ul class="portfolioOption">
+                    <li><span class="dateLbl">2023</span></li>
+                    <li>Marketplace</li>
+                  </ul>
+                  <p>Магазин электронной коммерции написанный на фреймворке Django</p>
+                  <!-- <p>E-commerce store written to the Django framework</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolioCard">
+            <div class="row g-4 align-items-center">
+              <div class="col-md-auto">
+                <div class="portfolioImgCol">
+                  <a href="images/digital_resume_01.png" data-fancybox="gallery" data-caption="Caption #1">
+                    <img src="images/digital_resume_01.png" />
+                  </a>
+                  <span>...</span>
+                  <a href="images/digital_resume_02.png" data-fancybox="gallery" data-caption="Caption #2">
+                    <img src="images/digital_resume_02.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="portfolioContentCol">
+                  <h4 class="lgTitle"><a href="javascript:void(0)">Portfolio option 2</a></h4>
+                  <ul class="portfolioOption">
+                    <li><span class="dateLbl">2023</span></li>
+                    <li>Resume-Blog</li>
+                  </ul>
+                  <p>Электронное резюме-блог  создан при помощи фреймворка Flask</p>
+                  <!-- <p>Electronic resume-blog created using the Flask framework</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolioCard">
+            <div class="row g-4 align-items-center">
+              <div class="col-md-auto">
+                <div class="portfolioImgCol">
+                  <a href="javascript:void(0)"><img src="images/rik.jpg" style="height: 200px;"  alt="..."></a>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="portfolioContentCol">
+                  <h4 class="lgTitle"><a href="javascript:void(0)">Portfolio option 3</a></h4>
+                  <ul class="portfolioOption">
+                    <li><span class="dateLbl">2023</span></li>
+                    <!-- <li>Coming soon</li> -->
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis harum corporis, incidunt doloribus, cumque ea amet molestias sint ratione adipisci explicabo dolorem eos, repellendus reprehenderit architecto quasi placeat qui fuga?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================
+    End Content
+    ================================= -->
+
+  <!-- ================================
+    Start Footer
+    ================================= -->
+  <footer>
+    <div class="footerCol">
+      <div class="container">
+        <ul class="socialCol">
+          <li><a href="tg://resolve?domain=@rem1zoff_oleg"><img src="images/telegram.svg" alt="..."></a></li>
+          <li><a href="whatsapp://send?phone=+79534177925"><img src="images/whatsapp.svg" alt="..."></a></li>
+          <li><a href="mailto:job.rem1zoff@gmail.com" target="_blank" title="job.rem1zoff@gmail.com"><img src="images/gmail.svg" alt="..."></a></li>
+          <li><a href="javascript:void(0)"><img src="images/linkedin.svg" alt="..."></a></li>
+        </ul>
+        <div class="copyrightCol">
+          <p>Copyright ©2023 All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ================================
+    End Footer
+    ================================= -->
+
+  <!-- ================================
+    Start Scripts
+    ================================= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper@7.0.5/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- ================================
+    End Scripts
+    ================================= -->
+</body>
+
+</html>
