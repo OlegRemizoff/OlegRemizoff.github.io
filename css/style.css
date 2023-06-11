@@ -285,7 +285,7 @@ a, .btn {
   top: 13px;
   width: 100%;
   height: 100%;
-  background-color: #EDF7FA;
+  background-color:#900AA8;
   border-radius: 50%;
 }
 .bannerBtnCol {
@@ -864,4 +864,15 @@ input[type=text], input[type=email], select, textarea {
 .multiple-text {
   color: #9c07b6;
   
+}
+
+.navCol .hide-nav-link  {
+  visibility: hidden;
+
+}
+
+.wrapper {
+  border: 1px solid var(--primaryColor);
+  margin-left: 5px;
+
 }
